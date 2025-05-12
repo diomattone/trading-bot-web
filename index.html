@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json"/>
+  <title>Trading Bot Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>Trading Bot Dashboard</h1>
+  <div class="controls">
+    <button onclick="startBot()">Start Bot</button>
+    <button onclick="stopBot()">Stop Bot</button>
+    <select id="strategySelector">
+      <option value="moving_average">Moving Average</option>
+      <option value="rsi">RSI Strategy</option>
+    </select>
+  </div>
+  <h2>Status</h2>
+  <pre id="statusOutput">Idle</pre>
+  <canvas id="chart" width="600" height="300"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
